@@ -84,7 +84,7 @@ module.exports = {
 
         let url = args[0];
         if (!args.length) {
-            message.reply("Input a spotify url to utilize this command. Usage: []playlist {args: -spotify url} {args:playtype: -order -random}");
+            message.reply("Input a spotify url to utilize this command. Usage: []playlist {args: -spotify url}");
         }
         else {
             if (checkVoice() === true) {

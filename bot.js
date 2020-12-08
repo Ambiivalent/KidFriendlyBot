@@ -25,6 +25,11 @@ client.on("ready", () => {
     console.log(react + "Successful Launch" + react);
 });
 
+client.on("guildMemberAdd", (member) => {
+    console.log(memberTag + " has joined " + member.guild.name);
+    console.log(member.user);
+});
+
 client.on("message", async message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
@@ -68,7 +73,22 @@ client.on("message", async message => {
         case "search":
             client.commands.get("search").execute(message, args, ytsr);
             break;
-
+        case "screenshot":
+            client.commands.get("screenshot").execute(message, pup, fs);
+            break;
+        case "muteall":
+            client.commands.get("muteall").execute(message);
+            break;
+        case "unmuteall":
+            client.commands.get("unmuteall").execute(message);
+            break;
+        case "dot":
+            client.commands.get("dot").execute(message, args);
+            break;
+        case "define":
+            client.commands.get("define").execute(message,args, pup)
+        //case "tictactoe":
+        //    client.commands.get("ttt").execute(message, args)
     }
 
 
