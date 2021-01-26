@@ -87,6 +87,10 @@ client.on("message", async message => {
             break;
         case "define":
             client.commands.get("define").execute(message,args, pup)
+            break;
+        case "holygrail":
+            client.commands.get("holygrail").execute(message, args, fs)
+            break;
         //case "tictactoe":
         //    client.commands.get("ttt").execute(message, args)
     }
