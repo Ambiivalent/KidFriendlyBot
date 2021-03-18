@@ -91,8 +91,19 @@ client.on("message", async message => {
         case "holygrail":
             client.commands.get("holygrail").execute(message, args, fs)
             break;
+        //case "edit":  
+        //    client.commands.get("edit").execute(message,args,fs)
+        //    break;
+        // Needs more work
+
+        // case "testing":
+        //    client.commands.get("testing").execute(message,args)
+        //    break;
+        // Testing command
+
         //case "tictactoe":
         //    client.commands.get("ttt").execute(message, args)
+        // Needs more work
     }
 
 

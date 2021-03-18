@@ -1,7 +1,8 @@
 #config
 config.json
 test.js
-
+assets/
+commands/external
 # Logs
 logs
 *.log
