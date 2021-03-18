@@ -4,6 +4,7 @@ test.js
 assets/Original_List.txt
 assets/screenshot_list.txt
 commands/external
+
 # Logs
 logs
 *.log
