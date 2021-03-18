@@ -1,7 +1,8 @@
 #config
 config.json
 test.js
-assets
+assets/Original_List.txt
+assets/screenshot_list.txt
 commands/external
 # Logs
 logs
